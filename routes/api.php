@@ -15,6 +15,14 @@ use App\http\controllers\respuestacontroller;
 */
 
 
+/**
+	* @OA\Get(
+    *     path="/api/ejecutar",
+    *     summary="Endpoint para la consulta de datos",
+    *     @OA\Response(response="200", description="List of users"),
+    * )
+    */
+
 Route::get("/ejecutar",[respuestaController::class,"index"]);
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();

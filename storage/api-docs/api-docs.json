@@ -1,0 +1,37 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "API de Keiry Nicole Rosales Henriquez",
+        "description": "API de ejemplo para clase de Desarrollo de BackEnd y APIs",
+        "contact": {
+            "name": "Keiry Nicole Rosales Henriquez",
+            "url": "https://localhost/api/",
+            "email": "keirynicolerosales@gmail.com"
+        },
+        "license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        },
+        "version": "1.0.0"
+    },
+    "paths": {
+        "/api/ejecutar": {
+            "get": {
+                "tags": [
+                    "ejecutar"
+                ],
+                "summary": "Este es un endpoint o metodo para obtener datos y mostrarlos al usuario",
+                "description": "Descripción de prueba para la clase Desarrollo de BackEnd y API desarrollada por todo el equipo el 19/10/2023.",
+                "operationId": "ed42aafacf51d9aa570647800fcaa0e9",
+                "responses": {
+                    "200": {
+                        "description": "Se devuelven todos los registros cuando la consulta sea satisfactoria"
+                    },
+                    "500": {
+                        "description": "No se pudo realizar la ejecución al parecer hubo un error interno"
+                    }
+                }
+            }
+        }
+    }
+}
