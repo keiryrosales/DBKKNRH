@@ -2,7 +2,8 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
-use App\http\controllers\respuestacontroller;
+use App\Http\Controllers\respuestaController;
+use App\Http\Controllers\PaisController;
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -15,15 +16,24 @@ use App\http\controllers\respuestacontroller;
 */
 
 
+
 /**
 	* @OA\Get(
     *     path="/api/ejecutar",
     *     summary="Endpoint para la consulta de datos",
-    *     @OA\Response(response="200", description="List of users"),
+    *     @OA\Response(response="200", description="Datos devueltos"),
     * )
     */
 
 Route::get("/ejecutar",[respuestaController::class,"index"]);
+
+Route::post("/nuevo",[PaisController::class,"crearPais"]);
+
+Route::get("/obtener",[PaisController::class,"obtener"]);
+
+
+
+
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });

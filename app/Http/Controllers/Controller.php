@@ -9,11 +9,11 @@ use Illuminate\Routing\Controller as BaseController;
 /**
  * @OA\Info(
  *      version="1.0.0",
- *      title="API de Keiry Nicole Rosales Henriquez",
- *      description="API de ejemplo para clase de Desarrollo de BackEnd y APIs",
+ *      title="API  de Gerardo Alfredo Espinoza Portillo",
+ *      description="API de ejemplo para la clase de Desarrollo de BackEnd y APIs",
  *      @OA\Contact(
- *          email="keirynicolerosales@gmail.com",
- *          name="Keiry Nicole Rosales Henriquez",
+ *          email="gerardoaespinoza15@gmail.com",
+ *          name="Gerardo Alfredo Espinoza Portillo",
  *          url="https://localhost/api/"
  *      ),
  *      @OA\License(
@@ -22,6 +22,7 @@ use Illuminate\Routing\Controller as BaseController;
  *      )
  * )
  */
+
 
 class Controller extends BaseController
 {
